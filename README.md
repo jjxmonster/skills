@@ -11,15 +11,15 @@ The agent skills I use every day with AI coding assistants (Claude Code and comp
 | [`plan-feature-driven-refactor`](skills/plan-feature-driven-refactor/SKILL.md) | Produces a complete, executable plan for migrating a codebase from a layer-by-type layout (flat `components/`, `hooks/`, `services/`...) to feature-driven architecture (`features/<feature>/` + `shared/`) — move-only, verified by the type checker, with execution starting only after you approve the plan. |
 | [`review-changes`](skills/review-changes/SKILL.md) | Reviews uncommitted changes against your project's own rule files and a built-in React best-practices checklist, then conditionally spawns a "deslop" subagent to clean up AI-generated noise. |
 
-## Usage
+## Installation
 
-Copy a skill directory into your project's `.claude/skills/` folder (or `~/.claude/skills/` to make it available globally):
+Install a skill with the [Skills CLI](https://github.com/vercel-labs/skills):
 
 ```bash
-cp -r skills/review-changes /path/to/your-project/.claude/skills/
+npx skills add jjxmonster/skills --skill commit-this
 ```
 
-Then invoke it in your session, e.g. `/review-changes`.
+Then invoke it in your session, e.g. `/commit-this`.
 
 ### Customizing `review-changes`
 
