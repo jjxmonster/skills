@@ -10,6 +10,7 @@ The agent skills I use every day with AI coding assistants (Claude Code and comp
 | [`conventional-commit`](skills/conventional-commit/SKILL.md) | Structured workflow for writing commit messages following the [Conventional Commits](https://www.conventionalcommits.org/) specification, with examples and validation rules. |
 | [`plan-feature-driven-refactor`](skills/plan-feature-driven-refactor/SKILL.md) | Produces a complete, executable plan for migrating a codebase from a layer-by-type layout (flat `components/`, `hooks/`, `services/`...) to feature-driven architecture (`features/<feature>/` + `shared/`) — move-only, verified by the type checker, with execution starting only after you approve the plan. |
 | [`review-changes`](skills/review-changes/SKILL.md) | Reviews uncommitted changes against your project's own rule files and a built-in React best-practices checklist, then conditionally spawns a "deslop" subagent to clean up AI-generated noise. |
+| [`update-linear-status`](skills/update-linear-status/SKILL.md) | Updates the active Linear issue status via MCP — resolves the ticket from context, branch, or explicit ID, then transitions it (`In Progress`, `In Review`, `Done`, etc.)|
 
 ## Installation
 
